@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="100dp"
+      android:text="𝕽𝖊𝖌𝖎𝖘𝖙𝖗𝖆𝖙𝖎𝖔𝖓"
+      android:textSize="30dp"
+      android:textColor="@color/yellow"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/fnames"
+      android:layout_width="286dp"
+      android:layout_height="49dp"
+      android:layout_marginTop="50dp"
+      android:background="@drawable/back"
+      android:ems="10"
+      android:hint="Full Names"
+      android:inputType="text"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView3"
+      android:drawableLeft="@drawable/baseline_perm_identity_24"/>
+
+  <EditText
+      android:id="@+id/username"
+      android:layout_width="282dp"
+      android:layout_height="48dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/back"
+      android:ems="10"
+      android:hint="Username"
+      android:inputType="text"
+      app:layout_constraintEnd_toEndOf="@+id/fnames"
+      app:layout_constraintStart_toStartOf="@+id/fnames"
+      app:layout_constraintTop_toBottomOf="@+id/fnames"
+      android:drawableLeft="@drawable/baseline_person_24"/>
+
+  <EditText
+      android:id="@+id/phonenumber"
+      android:layout_width="284dp"
+      android:layout_height="48dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/back"
+      android:ems="10"
+      android:hint="Telephone Number"
+      android:inputType="phone"
+      android:maxLength="10"
+      app:layout_constraintEnd_toEndOf="@+id/username"
+      app:layout_constraintStart_toStartOf="@+id/username"
+      app:layout_constraintTop_toBottomOf="@+id/username"
+      android:drawableLeft="@drawable/baseline_local_phone_24"/>
+
+  <EditText
+      android:id="@+id/id"
+      android:layout_width="290dp"
+      android:layout_height="49dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/back"
+      android:ems="10"
+      android:hint="National ID "
+      android:inputType="text"
+      android:maxLength="14"
+      app:layout_constraintEnd_toEndOf="@+id/phonenumber"
+      app:layout_constraintStart_toStartOf="@+id/phonenumber"
+      app:layout_constraintTop_toBottomOf="@+id/phonenumber"
+      android:drawableLeft="@drawable/baseline_person_24"/>
+
+  <EditText
+      android:id="@+id/password"
+      android:layout_width="287dp"
+      android:layout_height="46dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/back"
+      android:ems="10"
+      android:hint="Password"
+      android:inputType="textPassword"
+      app:layout_constraintEnd_toEndOf="@+id/id"
+      app:layout_constraintStart_toStartOf="@+id/id"
+      app:layout_constraintTop_toBottomOf="@+id/id"
+      android:drawableLeft="@drawable/baseline_lock_24"/>
+
+  <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="284dp"
+      android:layout_height="51dp"
+      android:layout_marginTop="16dp"
+      android:spinnerMode="dropdown"
+      app:layout_constraintEnd_toEndOf="@+id/password"
+      app:layout_constraintHorizontal_bias="0.012"
+      app:layout_constraintStart_toStartOf="@+id/password"
+      app:layout_constraintTop_toBottomOf="@+id/password" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/regbtn"
+      android:layout_width="144dp"
+      android:layout_height="53dp"
+      android:layout_marginTop="20dp"
+      android:text="𝕽𝖊𝖌𝖎𝖘𝖙𝖊𝖗"
+      android:textAlignment="center"
+      android:textColor="@color/yellow"
+      android:textSize="20dp"
+      app:layout_constraintEnd_toEndOf="@+id/spinner"
+      app:layout_constraintStart_toStartOf="@+id/spinner"
+      app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/clear_text"
+      android:layout_width="144dp"
+      android:layout_height="53dp"
+      android:layout_marginTop="10dp"
+      android:text="𝕮𝖑𝖊𝖆𝖗"
+      android:textAlignment="center"
+      android:textColor="@color/yellow"
+      android:textSize="20dp"
+      app:layout_constraintEnd_toEndOf="@+id/regbtn"
+      app:layout_constraintStart_toStartOf="@+id/regbtn"
+      app:layout_constraintTop_toBottomOf="@+id/regbtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
