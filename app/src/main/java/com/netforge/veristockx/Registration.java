@@ -21,6 +21,7 @@ public class Registration extends AppCompatActivity {
         setContentView(R.layout.activity_registration);
 
         Button btnReg = findViewById(R.id.regbtn);
+        Button btnClear = findViewById(R.id.cleartxt);
 
         Spinner spinner = findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -41,6 +42,15 @@ public class Registration extends AppCompatActivity {
                 startActivity(new Intent(Registration.this, Landing_Page.class));
             }
         });
+
+        Button clear=findViewById(R.id.cleartxt);
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Registration.this, AnimalDetails.class));
+            }
+        });
+
     }
 
 }
